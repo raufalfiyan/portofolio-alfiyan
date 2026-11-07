@@ -17,7 +17,7 @@
 }
 
 *, *::before, *::after { box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+html { scroll-behavior: smooth; scroll-padding-top: 40px; }
 body {
   margin: 0; background: var(--bg); color: var(--text);
   font-family: var(--font-body); line-height: 1.65; -webkit-font-smoothing: antialiased;
@@ -123,9 +123,9 @@ h1, h2, h3, h4 { font-family: var(--font-head); font-weight: 500; line-height: 1
 @keyframes marquee { to { transform: translateX(calc(-50% - 32px)); } }
 
 /* ---------- Sections ---------- */
-.section { padding: 108px 0; }
+.section { padding: 64px 0; }
 .section--alt { background: var(--bg-alt); border-block: 1px solid var(--line); }
-.section__head { max-width: 720px; margin-bottom: 52px; }
+.section__head { max-width: 720px; margin-bottom: 36px; }
 .section__head p { color: var(--muted); font-size: 17px; margin: 16px 0 0; }
 .eyebrow { display: inline-block; font-size: 13px; letter-spacing: .16em; text-transform: uppercase; color: var(--accent); margin-bottom: 16px; }
 .section h2 { font-size: clamp(30px, 4vw, 48px); letter-spacing: -.01em; }
@@ -275,7 +275,7 @@ h1, h2, h3, h4 { font-family: var(--font-head); font-weight: 500; line-height: 1
   .tl { grid-template-columns: 1fr; gap: 6px; }
 }
 @media (max-width: 640px) {
-  .section { padding: 72px 0; }
+  .section { padding: 48px 0; }
   .grid--2, .grid--3, .grid--4, .steps { grid-template-columns: 1fr; }
   .hero { padding-top: 112px; }
   .stats { grid-template-columns: 1fr; }
